@@ -1,0 +1,174 @@
+#page {
+  display: grid;
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 100px auto 200px;
+  grid-template-areas:
+    "head head head head"
+    "nav main main main"
+    "foot foot foot foot";
+}
+header {
+  background-image: linear-gradient(to bottom right, black, gray);
+  grid-area: head;
+  width: 100%;
+  display: flex;
+}
+
+nav {
+  height: 100%;
+  width: 200px;
+  background-image: linear-gradient(to bottom right, white, gray);
+  grid-area: nav;
+  
+}
+main {
+  background-image: linear-gradient(to bottom right, white, gray);
+  grid-area: main;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: space-between;
+}
+
+footer {
+  background-image: linear-gradient(to bottom right, white, gray);
+  grid-area: foot;
+}
+
+ul li {
+  float: left;
+  list-style-type: none;
+  margin-left: 25%;
+  padding: 10px;
+}
+.kutu {
+  perspective: 1000px; /* 3D efekti için perspektif değeri */
+  transition: transform 1s ease;
+  width: 200px;
+  height: 400px;
+  box-shadow: 5px 5px 10px black;
+  margin: 20px;
+}
+main p {
+  width: 100%;
+  text-align: center;
+  font-size: x-large;
+  background-image: linear-gradient(to bottom right, white, gray);
+}
+input[type="text"] {
+  width: 200px;
+  height: 25px;
+  margin: 425%;
+  margin-top: 20%;
+  text-align: start;
+  border-radius: 15px;
+  background-image: url("477210.png");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 3px;
+  background-position-x: 175px;
+  position: static;
+}
+
+header>div>ul>li {
+  margin: 30px 70px;
+}
+
+header div ul li:hover {
+  color: red;
+  text-decoration: underline;
+  /* padding: 10px; */
+  background-color: black;
+}
+
+ol li {
+  list-style-type: none;
+  margin-left: 200px;
+}
+nav ul{
+  width: 100%;
+  padding: 10px;
+  margin: 15px;
+}
+
+nav ul:hover {
+  color: red;
+  background-color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+}
+
+div.kutu:hover{
+  transform: rotateY(360deg) scale(1.2);
+}
+.logo-container {
+  display: inline-block;
+  align-content: center;
+  height: 50px; /* İstenilen yüksekliği ayarla */
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-top: 50%;
+  margin-left: 50%;
+}
+footer ol {
+  list-style: none;
+  padding: 0;
+}
+
+footer .list-container {
+  display: inline-block;
+  margin-right: 180px; /* İstenilen boşluk miktarını ayarla */
+}
+.social-media-links {
+  text-align: center;
+  margin-top: 20px; /* İstenilen boşluk miktarını ayarla */
+}
+.social-media-links a {
+  margin: 0 10px; /* İstenilen yatay boşluk miktarını ayarla */
+}
+.designed-by{
+  text-align: center;
+  margin-top: 20px; /* İstenilen boşluk miktarını ayarla */
+}
+
+*{
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  color: #888888;
+}
+footer ol div li:hover{
+  color: red;
+  background-color: black;
+  text-decoration: underline;
+}
+
+.user {
+display: inline-block;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+margin-top: 20px;
+margin-left: 25px;  
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+}
+
+.one {
+  background-image: url("https://picsum.photos/id/239/200/160");
+  }
+
+.card-style{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
